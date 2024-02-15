@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Lakshmi Chandrasena</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li> 
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Lakshmi Chandrasena</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Chandrasena profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Lakshmi Chandrasena</h1>
+        <p class="section__text__p2">Software Engineer | Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/t-chandrasena-81295b20a/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/TL-Chandrasena'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree <br />Computer Science</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>M.Sc. Masters Degree<br />Computer and Information Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am currently pursuing a Master of Science in Computer Science at New Jersey Institute of Technology, NJ, with a GPA of 3.5. Prior to this, I completed my Bachelor of Science in Computer Science at Sree Venkateswara College of Engineering, Nellore, graduating with a GPA of 3.81 in May 2023.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">My Skills</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-container">
+        <div class="skill">
+          <h2>Programming Languages</h2>
+          <p>JavaScript, Python, C, C++</p>
+        </div>
+        <div class="skill">
+          <h2>Frameworks</h2>
+          <p>React JS, Django, PHP, Angular</p>
+        </div>
+        <div class="skill">
+          <h2>Tools</h2>
+          <p>Git, GitHub, Azure</p>
+        </div>
+        <div class="skill">
+          <h2>Database</h2>
+          <p>Oracle, MySQL</p>
+        </div>
+      </div>
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Etechno Solutions <br> Web Development Intern</h2>
+              <p class="experience-duration">Jan 2023 - June 2023</p>
+              <ul class="experience-list">
+                <li>Contributed to React.js based web applications, improving user experience.</li><br>
+                <li>Designed responsive user interfaces using HTML and CSS.</li><br>
+                <li>Developed interactive features with JavaScript and managed MySQL databases.</li><br>
+                <li>Gained valuable teamwork and problem-solving skills in a professional environment.</li><br>
+              </ul>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Coincent<br> Web Development Intern</h2>
+              <p class="experience-duration">Aug 2022 - Sept 2022</p>
+              <ul class="experience-list">
+                <li>As a web development intern with a focus on front-end development, I actively contributed to enhancing user interfaces using HTML, CSS, and JavaScript.</li><br>
+                <li>I collaborated with the team to design and optimize web applications for improved usability and cross-browser compatibility.</li><br>
+                <li>My responsibilities included quality assurance and resolving front-end bugs, providing me with valuable experience in debugging and troubleshooting code.</li><br>
+              </ul>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Cochere Magazine | Marketing Internship</h2>
+              <p class="experience-duration">Apr 2022 - Aug 2022</p>
+              <ul class="experience-list">
+                <li>I gained valuable hands-on experience in promoting and strategizing marketing campaigns.</li><br>
+                <li>I contributed to social media management, content creation, and audience engagement, while learning how to analyze market trends.</li><br>
+                <li>This role allowed me to apply my classroom knowledge to real-world marketing challenges, further enhancing my skills as a marketing student.</li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+       
+        <section id="projects">
+          <p class="section__text__p1">Browse My Recent</p>
+          <h1 class="title">Projects</h1>
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/project-1.png"
+                    alt="Rent-a-Car Project"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Rent-a-Car</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/TL-Chandrasena/Car-rental'"
+                  >
+                    GitHub
+                  </button>
+                  <!-- Add live demo link if available -->
+                  <!-- <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://rent-a-car-demo.com'"
+                  >
+                    Live Demo
+                  </button> -->
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/project-2.png"
+                    alt="Adopt a Pet Project"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Adopt a Pet</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/username/adopt-a-pet'"
+                  >
+                    GitHub
+                  </button>
+                  <!-- Add live demo link if available -->
+                  <!-- <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://adopt-a-pet-demo.com'"
+                  >
+                    Live Demo
+                  </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#contact'"
+          />
+        </section>
+            
+        
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:lt267@njit.edu">lt267@njit.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/t-chandrasena-81295b20a/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li> 
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Lakshmi Chandrasena. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
